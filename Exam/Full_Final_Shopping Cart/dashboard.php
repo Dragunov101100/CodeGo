@@ -1,3 +1,21 @@
+<?php
+   session_start();
+   require_once('opencon.php');
+   $strsql = "SELECT * From tbl_user";
+
+   if ($rsUser = mysqli_query($con,$strsql)){
+   if(mysqli_num_rows($rsUser)>0){
+    while($recUser = mysqli_fetch_array($rsUser)){
+        $name = $recUser ['name'];
+    }
+    mysqli_free_result($rsUser);
+   }
+   else 
+   echo 'no record found';
+   }
+   else 
+   echo 'ERROR: Could not execute your request';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
