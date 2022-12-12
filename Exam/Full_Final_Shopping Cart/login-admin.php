@@ -1,3 +1,35 @@
+<?php
+    require_once('opencon.php');
+        $strsql = "SELECT * FROM tbl_user";
+
+        if($rsUser = mysqli_query($con,$strsql)){
+            if(mysqli_num_rows($rsUser)>0){
+                while($recUser = mysqli_fetch_array($rsUser)){
+                    $username = $recUser['username'];
+                    $password = $recUser['password'];
+                    $name = $recUser['name'];
+                }
+                mysqli_free_result($rsUser);
+            }
+            else
+                echo 'No record found!';
+        }
+        else
+            echo 'ERROR: Could not execute your request!';
+        
+
+
+    require_once('closecon.php');
+
+    if(isset($_POST['btnLogin'])){
+        if($_POST['username'] === $username  && $_POST['password'] === $password){
+            header("location:dashboard.php");
+        }else{
+            echo "invalid password|!";
+        }
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

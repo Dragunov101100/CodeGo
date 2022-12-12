@@ -79,7 +79,92 @@
                 <!-- Page Heading -->
                 <div class="row" id="main">
                     <div class="col-sm-12 col-md-12 well" id="content">
-                    .
+                    <?php
+                            if(isset($_POST['btnAdd'])){
+                                $pname = $_POST['productname'];
+                                $price = $_POST['productprice'];
+                                $description = $_POST['productdescription'];
+                                
+
+                                if(isset($_FILES['productphoto1'])){
+                                    $arrError1 = array();
+                                    $fileName1 = $_FILES['productphoto1']['name'];
+                                    $fileSize1 = $_FILES['productphoto1']['size'];
+                                    $fileTemp1 = $_FILES['productphoto1']['tmp_name'];
+                                    $fileType1 = $_FILES['productphoto1']['type'];
+
+                                    $fileExtTemp1 = explode('.', $fileName1);
+                                    $fileExt1 = strtolower(end($fileExtTemp1));
+                                    
+                                    $allowFiles1 = array('jpg','jpeg','png');
+                                    $uploadDir1 = 'Image1/';
+
+
+                                    if(in_array($fileExt1,$allowFiles1)=== false)
+                                        $arrError1[] = "Extension is not allowed! please use only jpg,jpeg,and png";
+                                    
+                                    if($fileSize1 > 10000000)
+                                        $arrError1[] = "File size is too big! 10mb is maximum!";
+                                    
+                                    if(empty($arrError1)){
+                                        move_uploaded_file($fileTemp1, $uploadDir1 . $fileName1);
+                                        echo 'file uploaded!';
+                                    }
+                                }else
+                                    echo 'error';
+                                    foreach($arrError1 as $key => $value)
+                                        echo $value . '<br>';
+                                    
+                                if(isset($_FILES['productphoto2'])){
+                                    $arrError2 = array();
+                                    $fileName2 = $_FILES['productphoto2']['name'];
+                                    $fileSize2 = $_FILES['productphoto2']['size'];
+                                    $fileTemp2 = $_FILES['productphoto2']['tmp_name'];
+                                    $fileType2 = $_FILES['productphoto2']['type'];
+
+                                    $fileExtTemp2 = explode('.', $fileName2);
+                                    $fileExt2 = strtolower(end($fileExtTemp2));
+                                    
+                                    $allowFiles2 = array('jpg','jpeg','png');
+                                    $uploadDir2 = 'Image2/';
+
+
+                                    if(in_array($fileExt2,$allowFiles2)=== false)
+                                        $arrError2[] = "Extension is not allowed! please use only jpg,jpeg,and png";
+                                    
+                                    if($fileSize2 > 10000000)
+                                        $arrError2[] = "File size is too big! 10mb is maximum!";
+                                    
+                                    if(empty($arrError2)){
+                                        move_uploaded_file($fileTemp2, $uploadDir2 . $fileName2);
+                                        echo 'file uploaded!';
+                                    }
+                                }else
+                                    echo 'error';
+                                    foreach($arrError2 as $key => $value)
+                                        echo $value . '<br>';
+                                
+
+                                require('opencon.php');
+                                    $strsql = "INSERT INTO tbl_products(name,
+                                                                        description,
+                                                                        price,
+                                                                        photo1,
+                                                                        photo2) 
+                                                            VALUES ('$pname',
+                                                                    '$description',
+                                                                    '$price',
+                                                                    '$fileName1',
+                                                                    '$fileName2')";
+                                    if(mysqli_query($con,$strsql)){
+                                        header("location:confirm-add-product.php");
+                                    }
+                                require_once('closecon.php');
+
+
+
+                            }
+                        ?>
                         <form method="post" enctype="multipart/form-data">
                             <label for="productname">Product Name</label>
                             <input type="text" name="productname" placeholder="Name" required><br>
