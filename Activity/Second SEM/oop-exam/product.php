@@ -1,5 +1,5 @@
 <?php
-    class Products{
+    class Product{
         private $name;
         private $description;
         private $price;
@@ -28,6 +28,4 @@
             return $this->price * 1.5;
         }
     }
-
 ?>
-
