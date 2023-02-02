@@ -31,7 +31,7 @@
         $medicine[1]->setType("Generic");
         $medicine[1]->setExpirationDate("10/31/2023");
 
-        $cart = new Cart;
+        $cart = new cart;
 
         $cart->addToCart($medicine[0]);
         $cart->addToCart($medicine[1]);
