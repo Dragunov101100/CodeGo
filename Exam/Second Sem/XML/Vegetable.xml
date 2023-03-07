@@ -4,7 +4,8 @@
     <Vegetable name = "Carrot">
         <scientific_name>Daucus carota<scientific_name>
         <Crop_type>Root Crop</Crop_type>  
-            <Info>Carrots are the most widely cultivated of root crops
+            <Info>
+                  Carrots are the most widely cultivated of root crops
                   and should be ready for harvest about 60-80 days after
                   sowing seeds, depending on the variety.
             </Info>
@@ -42,9 +43,56 @@
                 phosphorus
                 folate
            </minerals>
-           <carbohydrates>9 grams of net carbs per cup (122 grams)</carbohydrates>
-           <fats>0.2 g</fats>
-           <protein>0.9 g</protein>
+           <carbohydrates>9 grams of net carbs per cup (122 grams).</carbohydrates>
+           <fats>0.2g</fats>
+           <protein>0.9g</protein>
            <calories>41</calories>
-        </Nutrients>                               
+        </Nutrients>  
+
+        <Vegetable name = "Potato">
+        <scientific_name>Solanum tuberosum<scientific_name>
+        <Crop_type>Root Crop</Crop_type>  
+            <Info>
+                  Potatoes and yams are tubers, whereas taro and cocoyams
+                  are derived from corms, underground stems, and swollen hypocotyls.
+                  Cassava and sweet potatoes are storage roots and canna and
+                  arrowroots are edible rhizomes.
+            </Info>
+        <Biological_Species>
+            <Species-1>White Potatoes</Species-1>
+            <Species-2>Red Potatoes</Species-2>
+            <Species-3>Yellow Potatoes</Species-3>
+            <Species-4>Purple or Blue Potatoes</Species-4>
+            <Species-5>Black Potatoes</Species-5>
+            <Species-6>Russet Potatoes</Species-6>
+            <Species-7>Petite Potatoes</Species-7>
+            <Species-8>Sweet Potatoes</Species-8>
+            <Species-9>Fingerling Potatoes</Species-9>
+            <Species-10>STARCHY, WAXY, OR ALL-PURPOSE POTATOES</Species-10>
+        </Biological_Species>
+        <cooking_Dish>
+            <Apetizer>Potato Crostini With Pesto Cheese</Apetizer>
+            <Soup>Creamy Potato Soup</Soup>
+            <Salad>Creamy Potato Salad</Salad>
+            <Desserts>Mashed Potato Truffles</Desserts>
+            <Main_course>Loaded Baked Potato Casserole</Main_course>
+        </cooking_Dish>
+        <Nutrients>
+           <vitamins>
+                Vitamin B6
+                Vitamin C
+           </vitamins>
+           <minerals>
+                potassium 
+                Manganese
+                Magnesium
+                phosphorus
+                Niacin
+                Folate
+           </minerals>
+           <carbohydrates>26.29g grams of net carbs per cup (122 grams).</carbohydrates>
+           <fats>0.2g</fats>
+           <protein>4.3g</protein>
+           <calories>113</calories>
+        </Nutrients>                             
 </Vegetables>
