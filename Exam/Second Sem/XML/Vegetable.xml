@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Vegetables>
-    <Vegetable name = "Carrot">
-        <scientific_name>Daucus carota<scientific_name>
+
+    <Kind_of_Vegetable name = "Carrot">
+        <scientific_name>Daucus carota</scientific_name>
         <Crop_type>Root Crop</Crop_type>  
             <Info>
                   Carrots are the most widely cultivated of root crops
@@ -48,9 +49,9 @@
            <protein>0.9g</protein>
            <calories>41</calories>
         </Nutrients>  
-
-        <Vegetable name = "Potato">
-        <scientific_name>Solanum tuberosum<scientific_name>
+    </Kind_of_Vegetable>
+        <Kind_of_Vegetable name = "Potato">
+        <scientific_name>Solanum tuberosum</scientific_name>
         <Crop_type>Root Crop</Crop_type>  
             <Info>
                   Potatoes and yams are tubers, whereas taro and cocoyams
@@ -94,5 +95,6 @@
            <fats>0.2g</fats>
            <protein>4.3g</protein>
            <calories>113</calories>
-        </Nutrients>                             
+        </Nutrients> 
+    </Kind_of_Vegetable>                            
 </Vegetables>
