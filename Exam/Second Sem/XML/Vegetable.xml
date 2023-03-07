@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Vegetables>
+    <Vegetable name = "Carrot">
+        <scientific_name>Daucus carota<scientific_name>
+        <Crop_type>Root Crop</Crop_type>  
+            <Info>Carrots are the most widely cultivated of root crops
+                  and should be ready for harvest about 60-80 days after
+                  sowing seeds, depending on the variety.
+            </Info>
+        <Biological_Species>
+            <Species-1>Wild Carrot</Species-1>
+            <Species-2>Fennel</Species-2>
+            <Species-3>Hemlock</Species-3>
+            <Species-4>Beet</Species-4>
+            <Species-5>Ground Elder</Species-5>
+            <Species-6>Parsnip</Species-6>
+            <Species-7>Radish</Species-7>
+            <Species-8>Giant Hogweed</Species-8>
+            <Species-9>Skirret</Species-9>
+            <Species-10>Celery</Species-10>
+        </Biological_Species>
+        <cooking_Dish>
+            <Apetizer>Carrot and Cheese Canapés</Apetizer>
+            <Soup>Creamy Roasted Carrot Soup</Soup>
+            <Salad>French Grated Carrot Salad with Lemon Dijon Vinaigrette</Salad>
+            <Desserts>Carrot Cake Ice Cream</Desserts>
+            <Main_course>Carrot-Lentil Cakes with Garlic-Herb Tahini Sauce</Main_course>
+        </cooking_Dish>
+        <Nutrients>
+           <vitamins>
+                vitamin E
+                vitamin K
+                B6
+                vitamin B
+                vitamin C
+           </vitamins>
+           <minerals>
+                potassium 
+                calcium
+                magnesium
+                phosphorus
+                folate
+           </minerals>
+           <carbohydrates>9 grams of net carbs per cup (122 grams)</carbohydrates>
+           <fats>0.2 g</fats>
+           <protein>0.9 g</protein>
+           <calories>41</calories>
+        </Nutrients>                               
+</Vegetables>
