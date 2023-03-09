@@ -48,8 +48,10 @@
            <fats>0.2g</fats>
            <protein>0.9g</protein>
            <calories>41</calories>
+           <Dietary_Fiber>3.4g</Dietary_Fiber>
         </Nutrients>  
     </Kind_of_Vegetable>
+
         <Kind_of_Vegetable name = "Potato">
         <scientific_name>Solanum tuberosum</scientific_name>
         <Crop_type>Root Crop</Crop_type>  
@@ -95,6 +97,152 @@
            <fats>0.2g</fats>
            <protein>4.3g</protein>
            <calories>113</calories>
+           <Dietary_Fiber>2.7g</Dietary_Fiber>
         </Nutrients> 
-    </Kind_of_Vegetable>                            
+    </Kind_of_Vegetable>  
+
+    <Kind_of_Vegetable name = "Wheat">
+        <scientific_name>Triticum aestivum</scientific_name>
+        <Crop_type>Cereal Crop, Fodder Crop</Crop_type>  
+            <Info>
+                  Wheat is a grass widely cultivated for its seed, a cereal
+                  grain that is a worldwide staple food.
+            </Info>
+        <Biological_Species>
+            <Species-1>Aegilops tauschii</Species-1>
+            <Species-2>Triticum turgidum</Species-2>
+            <Species-3>Triticum timopheevii</Species-3>
+            <Species-4>Triticum compactum</Species-4>
+            <Species-5>Aegilops speltoides</Species-5>
+            <Species-6>Aegilops cylindrica</Species-6>
+            <Species-7>Aegilops triuncialis</Species-7>
+            <Species-8>Triticum urartu</Species-8>
+            <Species-9>Aegilops umbellulata</Species-9>
+            <Species-10>Aegilops longissima</Species-10>
+        </Biological_Species>
+        <cooking_Dish>
+            <Apetizer>Savory Whole Wheat Onion</Apetizer>
+            <Soup>Yemeni Bulgur Wheat Shurba</Soup>
+            <Salad>Wheat Berry</Salad>
+            <Desserts>Whole Wheat Chocolate Chip Cookies</Desserts>
+            <Main_course>Quinoa whole-grain pasta with barley and bulgur</Main_course>
+        </cooking_Dish>
+        <Nutrients>
+           <vitamins>
+                B vitamins
+           </vitamins>
+           <minerals>
+                Calcium
+                Iron
+                Magnesium
+                Sodium 
+                Potassium 
+           </minerals>
+           <carbohydrates>57.51g grams of net carbs per cup (122 grams).</carbohydrates>
+           <fats>5.01g</fats>
+           <protein>11.14g</protein>
+           <calories>316</calories>
+           <Dietary_Fiber>5.4g</Dietary_Fiber>
+        </Nutrients> 
+    </Kind_of_Vegetable>
+
+    <Kind_of_Vegetable name = "Oats">
+        <scientific_name>Avena sativa</scientific_name>
+        <Crop_type>Cereal Crop, Fodder Crop</Crop_type>  
+            <Info>
+                  Cultivation of Oat is similar as wheat crop. It is mainly grown
+                  in Temperate and Subtropical climates. It can also thrive well
+                  in high-altitude tropics. They are very popular due to their
+                  health benefits.
+            </Info>
+        <Biological_Species>
+            <Species-1>Whole Oat Groats</Species-1>
+            <Species-2>Irish Oats</Species-2>
+            <Species-3>Scottish Oats</Species-3>
+            <Species-4>Old-Fashioned Oats</Species-4>
+            <Species-5>Quick Oats</Species-5>
+            <Species-6>Instant Oats</Species-6>
+            <Species-7>Oat Bran</Species-7>
+            <Species-8>Oat Flour</Species-8>
+        </Biological_Species>
+        <cooking_Dish>
+            <Apetizer>VEGGIE OAT FRITTERS WITH YOGOURT HERB DIP</Apetizer>
+            <Soup>Chicken and Wild Oats Soup</Soup>
+            <Salad>Fruit salad with oats and berry yoghurt</Salad>
+            <Desserts>Oatmeal Chocolate Chip Cookie Bars</Desserts>
+            <Main_course>OAT-BREADED PORK MEDALLIONS WITH DIJON MUSHROOM SAUCE</Main_course>
+        </cooking_Dish>
+        <Nutrients>
+           <vitamins>
+                 vitamin E
+                 Vitamin B1
+           </vitamins>
+           <minerals>
+                Manganese
+                Phosphorus
+                Copper
+                Iron
+                Selenium
+                Magnesium
+                Zinc
+           </minerals>
+           <carbohydrates>80.85g grams of net carbs per cup (122 grams).</carbohydrates>
+           <fats>8.42g</fats>
+           <protein>20.61g</protein>
+           <calories>475</calories>
+           <Dietary_Fiber>12.9g</Dietary_Fiber>
+        </Nutrients> 
+    </Kind_of_Vegetable>
+
+    <Kind_of_Vegetable name = "Corn">
+        <scientific_name>Zea mays</scientific_name>
+        <Crop_type>Field Crop, Feed Crop</Crop_type>  
+            <Info>
+                  Most of the crop is used domestically as the main energy ingredient in livestock feed
+                  and for fuel ethanol production. Corn is also processed into a multitude of food and
+                  industrial products including starch, sweeteners, corn oil, and beverage and industrial
+                  alcohols.
+            </Info>
+        <Biological_Species>
+            <Species-1>Ambrosia Hybrid</Species-1>
+            <Species-2>Blue Hopi</Species-2>
+            <Species-3>Golden Bantam</Species-3>
+            <Species-4>Honey Select Hybrid</Species-4>
+            <Species-5>Jubilee Hybrid</Species-5>
+            <Species-6>Nirvana Hybrid</Species-6>
+            <Species-7>Peaches and Cream</Species-7>
+            <Species-8>Picasso Hybrid</Species-8>
+            <Species-9>Ruby Queen Hybrid</Species-9>
+            <Species-10>Silver Queen Hybrid</Species-10>
+        </Biological_Species>
+        <cooking_Dish>
+            <Apetizer>Corn Salsa</Apetizer>
+            <Soup>Creamy Crab and Corn Soup</Soup>
+            <Salad>Classic Corn Salad</Salad>
+            <Desserts>Sweet Corn Pudding</Desserts>
+            <Main_course>Maque Choux</Main_course>
+        </cooking_Dish>
+        <Nutrients>
+           <vitamins>
+                Vitamin B6
+                Vitamin C
+                vitamin B5
+                vitamin B9
+                vitamin B3
+           </vitamins>
+           <minerals>
+                potassium 
+                Manganese
+                Magnesium
+                phosphorus
+                Zinc
+                Copper
+           </minerals>
+           <carbohydrates>23.2g grams of net carbs per cup (122 grams).</carbohydrates>
+           <fats>1.44g</fats>
+           <protein>3.93g</protein>
+           <calories>105</calories>
+           <Dietary_Fiber>3.3g</Dietary_Fiber>
+        </Nutrients> 
+    </Kind_of_Vegetable>                          
 </Vegetables>
