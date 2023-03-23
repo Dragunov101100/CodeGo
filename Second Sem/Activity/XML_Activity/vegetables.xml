@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Vegetables>
+
+    <Kind_of_Vegetable>
+
+        <name>Carrot</name>
+        <Info>
+                Carrots are the most widely cultivated of root crops
+                and should be ready for harvest about 60-80 days after
+                sowing seeds, depending on the variety.
+        </Info>
+        <Cooking_Dish>
+            <Apetizer>Carrot and Cheese Canapés</Apetizer>
+            <Soup>Creamy Roasted Carrot Soup</Soup>
+            <Salad>French Grated Carrot Salad with Lemon Dijon Vinaigrette</Salad>
+            <Desserts>Carrot Cake Ice Cream</Desserts>
+            <Main_course>Carrot-Lentil Cakes with Garlic-Herb Tahini Sauce</Main_course>
+        </Cooking_Dish> 
+        <Nutrients>
+           <vitamins>
+                vitamin E
+                vitamin K
+                B6
+                vitamin B
+                vitamin C
+           </vitamins>
+           <minerals>
+                potassium 
+                calcium
+                magnesium
+                phosphorus
+                folate
+           </minerals>
+           <carbohydrates>9 grams of net carbs per cup (122 grams).</carbohydrates>
+           <fats>0.2g</fats>
+           <protein>0.9g</protein>
+           <calories>41</calories>
+           <Dietary_Fiber>3.4g</Dietary_Fiber>
+        </Nutrients>
+        <Biological_Species>
+            <Species id = "1">Wild Carrot</Species>
+            <Species id = "2">Fennel</Species>
+            <Species id = "3">Hemlock</Species>
+            <Species id = "4">Beet</Species>
+            <Species id = "5">Ground Elder</Species>
+            <Species id = "6">Parsnip</Species>
+            <Species id = "7">Radish</Species>
+            <Species id = "8">Giant Hogweed</Species>
+            <Species id = "9">Skirret</Species>
+            <Species id = "10">Celery</Species>
+        </Biological_Species>
+     </Kind_of_Vegetable>
+
+    <Kind_of_Vegetable>
+    </Kind_of_Vegetable>
+
+    <Kind_of_Vegetable>
+    </Kind_of_Vegetable>
+
+    <Kind_of_Vegetable>
+    </Kind_of_Vegetable>
+
+    <Kind_of_Vegetable>
+    </Kind_of_Vegetable> -->
+
+</Vegetables>
