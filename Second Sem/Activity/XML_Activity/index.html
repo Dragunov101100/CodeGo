@@ -65,6 +65,7 @@
             var NUTRIENTS7 = xmlDoc.getElementsByTagName("Dietary_Fiber");
             
             var SPECIES = xmlDoc.getElementsByTagName("Species");
+            var Biological_species = xmlDoc.getElementsByTagName("Biological_Species");
         
 
             for (i = 0; i< NAME.length; i++) {
@@ -95,8 +96,9 @@
                         </td>
                         <td>
                               <ul>
-                                 `;for (j = 0; j < 10 && SPECIES[j]; j++) {
-                                   txt += `<li>${SPECIES[j].childNodes[0].nodeValue}</li>`;
+                                 `;
+                                 for (j = 0; j < 10  && SPECIES[j]; j++) {
+                                   txt += `<li>${SPECIES[j + (i * 10)].childNodes[0].nodeValue}</li>`;
                                      }`
                               </ul>
                         </td>

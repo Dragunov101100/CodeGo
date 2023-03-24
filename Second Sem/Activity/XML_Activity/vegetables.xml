@@ -94,7 +94,7 @@
             <Species id = "7">Petite Potatoes</Species>
             <Species id = "8">Sweet Potatoes</Species>
             <Species id = "9">Fingerling Potatoes</Species>
-            <Species id = "10">STARCHY, WAXY, OR ALL-PURPOSE POTATOES</Species>
+            <Species id = "10">All-Purpose Potato Flours</Species>
         </Biological_Species>
     </Kind_of_Vegetable>
 
@@ -181,11 +181,13 @@
             <Species id = "1">Whole Oat Groats</Species>
             <Species id = "2">Irish Oats</Species>
             <Species id = "3">Scottish Oats</Species>
-            <Species id = "4">Old id = "F"ashioned Oats</Species>
+            <Species id = "4">Ashioned Oats</Species>
             <Species id = "5">Quick Oats</Species>
             <Species id = "6">Instant Oats</Species>
-            <Species id = "7">Oat Bran</Species>
+            <Species id = "7">Oat Brand</Species>
             <Species id = "8">Oat Flour</Species>
+            <Species id = "9">Oat Brand</Species>
+            <Species id = "10">Oat Flour</Species>
         </Biological_Species>
     </Kind_of_Vegetable>
 
