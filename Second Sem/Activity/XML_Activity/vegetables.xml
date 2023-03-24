@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Vegetables>
-    <Kind_of_Vegetable id = "1">
+    <Kind_of_Vegetable>
         <Name>Carrot</Name>
         <Info>
             Carrots are the most widely cultivated of root crops
@@ -50,7 +50,7 @@
         </Biological_Species>
     </Kind_of_Vegetable>
 
-    <Kind_of_Vegetable id = "2">
+    <Kind_of_Vegetable>
         <Name>Potato</Name> 
         <Info>
             Potatoes and yams are tubers, whereas taro and cocoyams
@@ -98,7 +98,7 @@
         </Biological_Species>
     </Kind_of_Vegetable>
 
-    <Kind_of_Vegetable id = "3">
+    <Kind_of_Vegetable>
         <Name>Wheat</Name>
         <Info>
             Wheat is a grass widely cultivated for its seed, a cereal
@@ -142,7 +142,7 @@
         </Biological_Species>     
     </Kind_of_Vegetable>
 
-    <Kind_of_Vegetable id = "4">
+    <Kind_of_Vegetable>
         <Name>Oats</Name>
         <Info>
             Cultivation of Oat is similar as wheat crop. It is mainly grown
@@ -155,7 +155,7 @@
             <Soup>Chicken Wild Oats Soup</Soup>
             <Salad>Fruit salad with oats</Salad>
             <Desserts>Oatmeal Chocolate Chip</Desserts>
-            <Main_course>Oat-Breaded Pork</Main_course>
+            <Main_course>OAT-Breaded Pork</Main_course>
         </Cooking_Dish>
         <Nutrients>
            <Vitamins>
@@ -189,7 +189,7 @@
         </Biological_Species>
     </Kind_of_Vegetable>
 
-    <Kind_of_Vegetable id = "5">
+    <Kind_of_Vegetable>
         <Name>Corn</Name>
             <Info>
                 Most of the crop is used domestically as the main energy ingredient in livestock feed

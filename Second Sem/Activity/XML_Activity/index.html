@@ -30,7 +30,7 @@
         }
         
         function createTable(xml) {
-            var i, c, xmlDoc, txt;
+            var i, j, xmlDoc, txt;
             
             // Actual XML File Object mode
             xmlDoc = xml.responseXML; 
@@ -64,7 +64,6 @@
             var NUTRIENTS6 = xmlDoc.getElementsByTagName("Calories");
             var NUTRIENTS7 = xmlDoc.getElementsByTagName("Dietary_Fiber");
             
-            var BIOLOGICAL_SPECIES = xmlDoc.getElementsByTagName("Biological_Species");
             var SPECIES = xmlDoc.getElementsByTagName("Species");
         
 
@@ -93,18 +92,20 @@
                             <li>${NUTRIENTS6[i].childNodes[0].nodeValue}</li>
                             <li>${NUTRIENTS7[i].childNodes[0].nodeValue}</li>
                             </ul>
-                        <td>${BIOLOGICAL_SPECIES[i].childNodes[0].nodeValue}  
-                           
-                                `;for (c=0; c<=10;c++){txt +=`<il>${SPECIES[c].childNodes[0].nodeValue}</li>`}`   
-                                               
                         </td>
-                  </tr>
+                        <td>
+                              <ul>
+                                 `;for (j = 0; j < 10 && SPECIES[j]; j++) {
+                                   txt += `<li>${SPECIES[j].childNodes[0].nodeValue}</li>`;
+                                     }`
+                              </ul>
+                        </td>
+                    </tr>
+                    </tr>
                 `;                
             }
-
             document.getElementById("demo").innerHTML = txt;
         }
     </script>
-    
 </body>
 </html>
