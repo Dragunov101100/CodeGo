@@ -25,7 +25,7 @@
                     createTable(this);
                 }
             };
-            xmlhttp.open("GET", "Vegetable.xml", true);
+            xmlhttp.open("GET", "vegetables.xml", true);
             xmlhttp.send();
         }
         
@@ -45,7 +45,7 @@
                 </tr>
             `;
 
-            var NAME = xmlDoc.getElementsByTagName("name");
+            var NAME = xmlDoc.getElementsByTagName("Name");
             var INFO = xmlDoc.getElementsByTagName("Info");
 
             var DISHES = xmlDoc.getElementsByTagName("Cooking_Dish");
@@ -56,15 +56,16 @@
             var DISH5 = xmlDoc.getElementsByTagName("Main_course");
 
             var NUTRIENTS = xmlDoc.getElementsByTagName("Nutrients");
-            var NUTRIENTS1 = xmlDoc.getElementsByTagName("vitamins");
-            var NUTRIENTS2 = xmlDoc.getElementsByTagName("minerals");
-            var NUTRIENTS3 = xmlDoc.getElementsByTagName("carbohydrates");
-            var NUTRIENTS4 = xmlDoc.getElementsByTagName("fats");
-            var NUTRIENTS5 = xmlDoc.getElementsByTagName("protein");
-            var NUTRIENTS6 = xmlDoc.getElementsByTagName("calories");
+            var NUTRIENTS1 = xmlDoc.getElementsByTagName("Vitamins");
+            var NUTRIENTS2 = xmlDoc.getElementsByTagName("Minerals");
+            var NUTRIENTS3 = xmlDoc.getElementsByTagName("Carbohydrates");
+            var NUTRIENTS4 = xmlDoc.getElementsByTagName("Fats");
+            var NUTRIENTS5 = xmlDoc.getElementsByTagName("Protein");
+            var NUTRIENTS6 = xmlDoc.getElementsByTagName("Calories");
             var NUTRIENTS7 = xmlDoc.getElementsByTagName("Dietary_Fiber");
             
-            var BIOLOGICAL_SPECIES = xmlDoc.getElementsByTagName("Species");
+            var BIOLOGICAL_SPECIES = xmlDoc.getElementsByTagName("Biological_Species");
+            var SPECIES = xmlDoc.getElementsByTagName("Species");
         
 
             for (i = 0; i< NAME.length; i++) {
@@ -74,13 +75,16 @@
                         <td>${INFO[i].childNodes[0].nodeValue}</td>
 
                         <td>${DISHES[i].childNodes[0].nodeValue}
+                            <ul>
                             <li>${DISH1[i].childNodes[0].nodeValue}</li>
                             <li>${DISH2[i].childNodes[0].nodeValue}</li>
                             <li>${DISH3[i].childNodes[0].nodeValue}</li>
                             <li>${DISH4[i].childNodes[0].nodeValue}</li>
                             <li>${DISH5[i].childNodes[0].nodeValue}</li>
+                            </ul>
                         </td>
-                        <td>${NUTRIENTS[i].childNodes[0].nodeValue}                     
+                        <td>${NUTRIENTS[i].childNodes[0].nodeValue} 
+                            <ul>                    
                             <li>${NUTRIENTS1[i].childNodes[0].nodeValue}</li>
                             <li>${NUTRIENTS2[i].childNodes[0].nodeValue}</li>
                             <li>${NUTRIENTS3[i].childNodes[0].nodeValue}</li>
@@ -88,13 +92,11 @@
                             <li>${NUTRIENTS5[i].childNodes[0].nodeValue}</li>
                             <li>${NUTRIENTS6[i].childNodes[0].nodeValue}</li>
                             <li>${NUTRIENTS7[i].childNodes[0].nodeValue}</li>
-                        <td>
-                            <ul>
-                                `;for (c=0; c<=10;c++){
-                                    txt +=`
-                                } <il>${BIOLOGICAL_SPECIES[c].childNodes[0].nodeValue}</li>
-                                `}`   
-                            </ul>                     
+                            </ul>
+                        <td>${BIOLOGICAL_SPECIES[i].childNodes[0].nodeValue}  
+                           
+                                `;for (c=0; c<=10;c++){txt +=`<il>${SPECIES[c].childNodes[0].nodeValue}</li>`}`   
+                                               
                         </td>
                   </tr>
                 `;                
