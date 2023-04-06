@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="havar.css">
-  
+    <link rel="stylesheet" href="style.css">
     <title>Vegetables</title>
 </head>
-<body>
+<body class="bg">
     
-    <div class="container mt-40">
-        <h3 class="text-center">Hover Effect Style : Demo - 3</h3>
-    </div>
+        <div class="container mt-40 mb-30">
+            <h1 class="text-center">Vegetables</h1>
+                <div class="card" id="cards">
+
+   
+
 <script>
     const xmlhttp = new XMLHttpRequest();
                 xmlhttp.open("GET", "Vegetables.php");
@@ -27,18 +29,19 @@
                         for(const i in Vegetables){
                             j += 1;
                             const row =`
-                            <div class="row mt-30">
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="box3">
-                                    <img class="pic-1" src="${Vegetables[i].image}">
-                                        <div class="box-content">
-                                            <h3 class="title">${Vegetables[i].name}</h3>
-                                            <span class="post">${Vegetables[i].crop_type}</span>
-                                            <p class="description">${Vegetables[i].info}</p>
-                                        </div>
+                                <div class="card">
+                                    <div class="front before">
+                                        <img src="${Vegetables[i].image}">
                                     </div>
-                                </div>    
-                            </div>
+                                    <div class="front after">
+                                    <ul>
+                                        <h3>${Vegetables[i].name}</h3>
+                                        <p>${Vegetables[i].scientific_name}</p>
+                                        <p>${Vegetables[i].crop_type}</p>
+                                        <p>${Vegetables[i].info}</p>
+                                    </ul>
+                                    </div>
+                                </div>
                             `;
                             items.innerHTML += row;
                         }
