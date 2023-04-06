@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="havar.css">
+  
+    <title>Vegetables</title>
+</head>
+<body>
+    
+    <div class="container mt-40">
+        <h3 class="text-center">Hover Effect Style : Demo - 3</h3>
+    </div>
+<script>
+    const xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", "Vegetables.php");
+                xmlhttp.send();
+                xmlhttp.onload = function() {
+                    const Vegetables = JSON.parse(this.responseText).Vegetables;
+                    const items = document.getElementById('cards');
+                    var j=0;
+                    if(Vegetables){
+                        for(const i in Vegetables){
+                            j += 1;
+                            const row =`
+                            <div class="row mt-30">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box3">
+                                    <img class="pic-1" src="${Vegetables[i].image}">
+                                        <div class="box-content">
+                                            <h3 class="title">${Vegetables[i].name}</h3>
+                                            <span class="post">${Vegetables[i].crop_type}</span>
+                                            <p class="description">${Vegetables[i].info}</p>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            `;
+                            items.innerHTML += row;
+                        }
+                    }
+                }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>
