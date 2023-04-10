@@ -19,7 +19,7 @@ $Vegetable = array(
                are derived from corms, underground stems, and swollen hypocotyls.
                Cassava and sweet potatoes are storage roots and canna and
                arrowroots are edible rhizomes.",
-    "image" => "https://thumbs.dreamstime.com/b/potatoes-fresh-wooden-basket-33186647.jpg.",
+    "image" => "https://health.clevelandclinic.org/wp-content/uploads/sites/3/2021/01/healthyPotatoes-154919811-650x428.jpg",
   ),
   array(
     "name" => "Wheat",
@@ -27,8 +27,7 @@ $Vegetable = array(
     "scientific_name" => "Triticum aestivum",
     "info" => "Wheat is a grass widely cultivated for its seed, a cereal
                grain that is a worldwide staple food.",
-    "image" => "https://thumbs.dreamstime.com/b/grains-ears-wheat-25858561.jpg.
-    ",
+    "image" => "https://m.economictimes.com/thumb/height-450,width-600,imgsize-226592,msid-98156254/wheat-new.jpg",
   ),
   array(
     "name" => "Oats",
